@@ -15,7 +15,7 @@
   <tr>
     <td><%= idea.name %></td>
     <td><%= idea.sod %></td>
-    <td><%= idea.author %></td>
+    <td><%= idea.user.username %></td>
     <td><%= idea.raiting %></td>
     <td><%= link_to 'Show', idea %></td>
     <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
