@@ -1,0 +1,21 @@
+<div id='header'>
+<div class='container'>
+<div class='logo'>
+<a href="/"><img alt="Online Collaboration Software Tool" src="/images/logo.png" title="Home | Starthelp" /></a>
+</div>
+
+<div class='login'>
+  <%  if user_signed_in? %>
+  <a class='button default' href=<%=logout_path%> id='login_button' title='Выйти | StartHelp'>
+Выход
+  <%  else %>
+<a class='button default' href=<%=new_user_session_path%> id='login_button' title='Войти | StartHelp'>
+Вход
+<%end%>
+
+
+
+</a>
+</div>
+</div>
+</div> 

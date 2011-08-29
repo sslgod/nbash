@@ -1,0 +1,35 @@
+<div class="navigation" id="navigation">
+<ul>
+<li>
+  <%  if user_signed_in? %>
+  <a class="" href="/ideas" title="Идеи">Идеи </a>
+
+  <%else%>
+<a class="" href="/" title="Домой">
+Домашняя
+</a>
+  <%end%>
+
+</li>
+
+<li>
+<a class="" href="/about" title="Что такое Starthelp">
+Что такое Starthelp
+</a>
+</li>
+
+<li>
+  <%  if user_signed_in? %>
+  <a class="" href=<%=edit_user_registration_path%> title="Профиль">
+Профиль
+</a>
+
+  <%else%>
+
+<a class="" href="/price" title="Регистрация и цены">
+Регистрация и цены
+</a>
+  <%end%>
+</li>
+</ul>
+</div>

@@ -1,0 +1,244 @@
+/*---------------------------------  Styles.css  ---*/
+
+body {
+  font-size: 13px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #202020;
+  position: relative;
+  height: 100%; }
+
+#body {
+  overflow: hidden; }
+  #body .container {
+    min-height: 400px; }
+
+p {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #38373a;
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 46px; }
+
+h2 {
+  font-size: 20px;
+  letter-spacing: -1px; }
+
+h3 {
+  font-size: 16px;
+  margin-top: 30px; }
+
+h3 {
+  display: inline;
+  clear: right; }
+
+/*header*/
+.container {
+  width: 950px;
+  margin: 0 auto; }
+
+.content_block {
+  margin-top: 50px;
+  margin-bottom: 28px; }
+  .content_block ul, .content_block ol {
+    line-height: 18px;
+    list-style-position: inside; }
+  .content_block ol {
+    list-style-type: decimal; }
+    .content_block ol li {
+      margin-bottom: 10px; }
+#header {
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
+  #header .container {
+    overflow: hidden; }
+  #header .logo {
+    float: left;
+    padding: 15px 0; }
+  #header .login {
+    float: right;
+    margin-top: 21px;
+    width: 100px; }
+  #header .social {
+    float: right;
+    margin-top: 21px;
+    margin-right: 10px; }
+    #header .social a {
+      width: 25px;
+      display: inline-block;
+      padding-bottom: 0;
+      height: 19px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e8e1), to(#d4d8cd));
+      background-image: -moz-linear-gradient(#e5e8e1, #d4d8cd);
+      border: 1px solid #d4d8cd; }
+
+/*button*/
+.button {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 6px 0;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+  .button:hover {
+    cursor: pointer; }
+  .button.default {
+    background: #44a144;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a0db97), to(#30db63));
+    background-image: -moz-linear-gradient(#65d4db, #44a144);
+    border: 1px solid #44a144; }
+    .button.default:hover {
+        color: white;
+      box-shadow: inset 0 0 1px #38373a;
+      -moz-box-shadow: inset 0 0 1px #38373a;
+      -webkit-box-shadow: inset 0 0 1px #38373a;
+      text-shadow: 1px 1px 0 #00a0ab; }
+    .button.default:active {
+      box-shadow: inset 0 0 1px #38373a;
+      -moz-box-shadow: inset 0 0 1px #38373a;
+      -webkit-box-shadow: inset 0 0 1px #38373a;
+      text-shadow: 1px 1px 0 #00a0ab;
+      background: #44a144; }
+  .button.signup {
+    background: #85ca00;
+    color: #38373a;
+    font-size: 16px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a5fa00), to(#85ca00));
+    background-image: -moz-linear-gradient(#a5fa00, #85ca00);
+    border: 1px solid #85ca00; }
+    .button.signup:hover {
+      box-shadow: inset 0 0 1px #38373a;
+      -moz-box-shadow: inset 0 0 1px #38373a;
+      -webkit-box-shadow: inset 0 0 1px #38373a;
+      text-shadow: 1px 1px 0 #74b100;
+      color: white; }
+    .button.signup:active {
+      box-shadow: inset 0 0 1px #38373a;
+      -moz-box-shadow: inset 0 0 1px #38373a;
+      -webkit-box-shadow: inset 0 0 1px #38373a;
+      text-shadow: 1px 1px 0 #74b100;
+      background: #85ca00;
+      color: white; }
+/*navigate*/
+#navigation {
+  width: 950px;
+  margin: 0 auto;
+  height: 40px;
+  text-align: right;
+  clear: both;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px; }
+  #navigation ul {
+    margin: 0; }
+  #navigation li {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    line-height: 40px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 232, 225, 0)), to(#e5e8e1));
+    background-image: -moz-linear-gradient(rgba(229, 232, 225, 0), #e5e8e1); }
+    #navigation li:hover {
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e8e1), to(rgba(229, 232, 225, 0)));
+      background-image: -moz-linear-gradient(#e5e8e1, rgba(229, 232, 225, 0)); }
+    #navigation li a {
+      text-decoration: none;
+      color: #44a144;
+      height: 40px;
+      padding: 0 20px;
+      display: block; }
+      #navigation li a:hover, #navigation li a.selected {
+        color: #4ad8e8;
+        background: white;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e8e1), to(rgba(229, 232, 225, 0)));
+        background-image: -moz-linear-gradient(#e5e8e1, rgba(229, 232, 225, 0)); }
+      
+
+      /*Регистрация*/
+ #section_content table#pricing_plans {
+  width: 100%;
+  margin-bottom: 20px; }
+#section_content tr {
+  height: 46px;
+  background: #e5e8e1; }
+  #section_content tr:hover {
+    background: #d4d8cd; }
+#section_content td {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  text-align: center;
+  vertical-align: middle; }
+  #section_content td.plan_name {
+    width: 190px;
+    background: #888789;
+    color: white;
+    text-align: left !important;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 14px; }
+#section_content tr:hover .plan_name {
+  background: #30db63; }
+#section_content td.plan_price_29 {
+  font-weight: bold;
+  font-size: 15px; }
+#section_content td.plan_name span {
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal; }
+#section_content th {
+  background: white;
+  font-size: 12px;
+  vertical-align: bottom;
+  padding-bottom: 7px;
+  text-align: center; }
+#section_content td.plan_signup {
+  width: 150px; }
+  #section_content td.plan_signup a.button.signup {
+    width: 120px;
+    font-size: 12px;
+    margin: 0 auto; }
+#section_content #sales_information {
+  overflow: hidden; }
+  #section_content #sales_information h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+#section_content #special_plans {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+  padding-right: 40px; }
+  * html #section_content #special_plans {
+    overflow-x: hidden; }
+  #section_content #special_plans li {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 5px; }
