@@ -1,25 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>Название:</b>
   <%= @idea.name %>
 </p>
 
 <p>
-  <b>Sod:</b>
+  <b>Содержание:</b>
   <%= @idea.sod %>
 </p>
 
 <p>
-  <b>Author:</b>
+  <b>Автор:</b>
   <%= @idea.user.username %>
 </p>
 
 <p>
-  <b>Raiting:</b>
+  <b>Рейтинг:</b>
   <%= @idea.raiting %>
 </p>
 
+<p><%=@un%></p>
 
+<%if current_user.id==@idea.user_id%>
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
+<td><%= link_to 'Destroy', @idea, :confirm => 'Вы уверены?', :method => :delete %></td>
+<%end%>
+
 <%= link_to 'Back', ideas_path %>

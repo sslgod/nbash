@@ -1,6 +1,13 @@
+<%if current_user.id==@idea.user_id%>
 <h1>Editing idea</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @idea %> |
 <%= link_to 'Back', ideas_path %>
+
+<%else%>
+<script type="text/javascript">
+    window.location.href="/ideas"  // put your correct path in a string here
+  </script>
+<%end%>

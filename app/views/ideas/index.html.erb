@@ -1,11 +1,11 @@
-<h1>Listing ideas</h1>
+<h1>Все идеи пользователей</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Sod</th>
-    <th>Author</th>
-    <th>Raiting</th>
+    <th>Название</th>
+    <th>Содержание</th>
+    <th>Автор</th>
+    <th>Рейтинг</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,8 +18,8 @@
     <td><%= idea.user.username %></td>
     <td><%= idea.raiting %></td>
     <td><%= link_to 'Show', idea %></td>
-    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-    <td><%= link_to 'Destroy', idea, :confirm => 'Are you sure?', :method => :delete %></td>
+
+
   </tr>
 <% end %>
 </table>

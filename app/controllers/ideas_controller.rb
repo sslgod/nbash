@@ -1,7 +1,12 @@
 class IdeasController < ApplicationController
   before_filter :authenticate_user!
+ # load_and_authorize_resource
   # GET /ideas
   # GET /ideas.xml
+ 
+
+
+
   def index
     @ideas = Idea.all
 
@@ -15,7 +20,7 @@ class IdeasController < ApplicationController
   # GET /ideas/1.xml
   def show
     @idea = Idea.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @idea }
