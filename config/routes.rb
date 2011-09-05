@@ -3,7 +3,7 @@ Newapp::Application.routes.draw do
 
   devise_for :users do get 'logout' => 'devise/sessions#destroy' end
 
-  match '/price', :to => 'pages#pricing'
+  match '/price',   :to => 'pages#pricing'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
 
